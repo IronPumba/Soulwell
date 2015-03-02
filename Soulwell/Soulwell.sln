@@ -7,6 +7,10 @@ Project("{27502B71-0761-DBB8-743E-7452DCBCDC32}") = "Soulwell", "Assembly-CSharp
 EndProject
 Project("{27502B71-0761-DBB8-743E-7452DCBCDC32}") = "Soulwell", "Assembly-UnityScript-firstpass.unityproj", "{66265B6B-32D8-7DB3-C4D4-ACB5083A22F8}"
 EndProject
+Project("{27502B71-0761-DBB8-743E-7452DCBCDC32}") = "Soulwell", "Assembly-UnityScript.unityproj", "{C3971417-8514-9576-2302-784535CB68CB}"
+EndProject
+Project("{27502B71-0761-DBB8-743E-7452DCBCDC32}") = "Soulwell", "Assembly-UnityScript-Editor.unityproj", "{9165A5B4-85A2-F6C9-71AB-7A29CE4A0C0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +29,19 @@ Global
 		{66265B6B-32D8-7DB3-C4D4-ACB5083A22F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66265B6B-32D8-7DB3-C4D4-ACB5083A22F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66265B6B-32D8-7DB3-C4D4-ACB5083A22F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3971417-8514-9576-2302-784535CB68CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3971417-8514-9576-2302-784535CB68CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3971417-8514-9576-2302-784535CB68CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3971417-8514-9576-2302-784535CB68CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9165A5B4-85A2-F6C9-71AB-7A29CE4A0C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9165A5B4-85A2-F6C9-71AB-7A29CE4A0C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9165A5B4-85A2-F6C9-71AB-7A29CE4A0C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9165A5B4-85A2-F6C9-71AB-7A29CE4A0C0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-				GlobalSection(MonoDevelopProperties) = preSolution
+						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
