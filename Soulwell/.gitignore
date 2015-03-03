@@ -34,6 +34,6 @@ Thumbs.db
 
 *.dll
 *.exe
-Soulwell/Library/
-Soulwell/Temp/
-Soulwell/Builds/
+Soulwell/Soulwell/Library/
+Soulwell/Soulwell/Temp/
+Soulwell/Soulwell/Builds/
