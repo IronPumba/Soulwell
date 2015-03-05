@@ -1,3 +1,109 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-5132
+Pipe name: \\.\pipe\UnityShaderCompiler-1-1140
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=11431 outsize=758 ok=1
+Cmd: preprocess
+  insize=4367 outsize=550 ok=1
+Cmd: preprocess
+  insize=1759 outsize=370 ok=1
+Cmd: preprocess
+  insize=952 outsize=375 ok=1
+Cmd: preprocess
+  insize=1054 outsize=424 ok=1
+Cmd: preprocess
+  insize=2058 outsize=509 ok=1
+Cmd: preprocess
+  insize=1352 outsize=432 ok=1
+Cmd: preprocess
+  insize=1592 outsize=482 ok=1
+Cmd: preprocess
+  insize=1243 outsize=312 ok=1
+Cmd: preprocess
+  insize=1175 outsize=429 ok=1
+Cmd: preprocess
+  insize=6830 outsize=843 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at frag_ao.cginc(2): 'samples': array dimensions of function parameters must be explicit
+  api=4 type=0 insize=1796 outsize=0 kw= ok=0
+Cmd: preprocess
+  insize=1256 outsize=333 ok=1
+Cmd: preprocess
+  insize=2306 outsize=565 ok=1
+Cmd: preprocess
+  insize=1027 outsize=323 ok=1
+Cmd: preprocess
+  insize=1443 outsize=406 ok=1
+Cmd: preprocess
+  insize=1493 outsize=383 ok=1
+Cmd: preprocess
+  insize=1465 outsize=363 ok=1
+Cmd: preprocess
+  insize=1177 outsize=343 ok=1
+Cmd: preprocess
+  insize=2234 outsize=673 ok=1
+Cmd: preprocess
+  insize=1019 outsize=289 ok=1
+Cmd: preprocess
+  insize=829 outsize=338 ok=1
+Cmd: preprocess
+  insize=33443 outsize=288 ok=1
+Cmd: preprocess
+  insize=1282 outsize=279 ok=1
+Cmd: preprocess
+  insize=3440 outsize=747 ok=1
+Cmd: preprocess
+  insize=1097 outsize=378 ok=1
+Cmd: preprocess
+  insize=7763 outsize=1166 ok=1
+Cmd: preprocess
+  insize=1034 outsize=465 ok=1
+Cmd: preprocess
+  insize=13775 outsize=2756 ok=1
+Cmd: preprocess
+  insize=2028 outsize=517 ok=1
+Cmd: preprocess
+  insize=1674 outsize=320 ok=1
+Cmd: preprocess
+  error: 1 plat 12 at (95): Compiling shaders to OpenGL ES 2.0, Xbox 360, PS3, Flash or DX11 requires both vertex and fragment programs
+  insize=2397 outsize=1271 ok=1
+Cmd: preprocess
+  insize=1823 outsize=317 ok=1
+Cmd: preprocess
+  insize=1088 outsize=373 ok=1
+Cmd: preprocess
+  insize=777 outsize=284 ok=1
+Cmd: preprocess
+  insize=6056 outsize=914 ok=1
+Cmd: preprocess
+  insize=622 outsize=382 ok=1
+Cmd: preprocess
+  insize=33452 outsize=288 ok=1
+Cmd: preprocess
+  insize=6967 outsize=271 ok=1
+Cmd: preprocess
+  insize=4577 outsize=587 ok=1
+Cmd: preprocess
+  insize=5103 outsize=1147 ok=1
+Cmd: preprocess
+  insize=833 outsize=323 ok=1
+Cmd: preprocess
+  insize=758 outsize=335 ok=1
+Cmd: preprocess
+  insize=4076 outsize=685 ok=1
+Cmd: preprocess
+  insize=936 outsize=319 ok=1
+Cmd: preprocess
+  insize=1406 outsize=316 ok=1
+Cmd: preprocess
+  insize=2266 outsize=1040 ok=1
+Cmd: preprocess
+  insize=1136 outsize=512 ok=1
+Cmd: preprocess
+  insize=1285 outsize=411 ok=1
+Cmd: preprocess
+  insize=616 outsize=277 ok=1
+Cmd: preprocess
+  insize=822 outsize=387 ok=1
+Cmd: preprocess
+  insize=1801 outsize=713 ok=1
