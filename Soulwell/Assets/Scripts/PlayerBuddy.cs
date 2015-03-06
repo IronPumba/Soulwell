@@ -22,7 +22,7 @@ public class PlayerBuddy : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		transform.position = target.transform.position - new Vector3 (-2, -2, 0);
+		transform.position = target.transform.position - new Vector3 (2, 2, 0);
 	}
 	
 	// Update is called once per frame
@@ -63,7 +63,7 @@ public class PlayerBuddy : MonoBehaviour
 			//and disappear
 			gameObject.renderer.enabled = false;
 			//if you need to reuse this guy later, then I would suggest //ing out the following line.
-			gameObject.SetActive = false;
+			//gameObject.SetActive = false;
 		}
 	}
 }
