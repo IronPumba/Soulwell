@@ -3,8 +3,16 @@ using System.Collections;
 
 public class PondCubeScript : MonoBehaviour {
 
-	void OnTriggerEnter (Collider info)
+	private int jumpCount = 0;
+
+	void OnTriggerEnter(Collider col)
 	{
-		if(info.tag == "Player") renderer.material.color = Color.red;
+		if(col.gameObject.tag == "Player") jumpCount += 1;
+
+		if(jumpCount >0) renderer.material.color = Color.red;
+
+		if(jumpCount >1) Destroy (gameObject);
+
+		if(col.gameObject.tag == "Player") print ("Jumped");
 	}
 }
