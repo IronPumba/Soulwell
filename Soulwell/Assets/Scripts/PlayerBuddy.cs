@@ -19,15 +19,14 @@ public class PlayerBuddy : MonoBehaviour
 
 	private bool freedom = true;
 
-	public AudioClip bird;
+	public AudioClip buddyscream;
 
-	private AudioSource source;
+	private bool isVisible = true;
+
 
 	// Use this for initialization
 	void Start ()
 	{
-		source = GetComponent<AudioSource>();
-		source.clip = bird;
 		transform.position = target.transform.position - new Vector3 (2, 2, 0);
 	}
 	
@@ -64,14 +63,18 @@ public class PlayerBuddy : MonoBehaviour
 			transform.position += newDir * travelSpeed * Time.deltaTime;
 		}
 
-		if (Vector3.Distance(lake.transform.position, transform.position) < 0.5f)
+		if (Vector3.Distance(lake.transform.position, transform.position) < 0.5f && isVisible)
 		{
 			//and disappear
 			gameObject.renderer.enabled = false;
-			source.Play();
+			isVisible = false;
+			audio.PlayOneShot(buddyscream);
 			//if you need to reuse this guy later, then I would suggest //ing out the following line.
 			//gameObject.SetActive = false;
+			gameObject.collider.enabled = false;
 		}
 
 	}
+
 }
+
