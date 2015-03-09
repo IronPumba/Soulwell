@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Loadlevel.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\BlurEffect.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\ContrastStretchEffect.cs" />
@@ -61,11 +60,13 @@
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\SepiaToneEffect.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
-     <Compile Include="Assets\ScreenFade.cs" />
+     <Compile Include="Assets\Scripts\Bird.cs" />
+     <Compile Include="Assets\Scripts\Loadlevel.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\PlayerBuddy.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PondCubeScript.cs" />
+     <Compile Include="Assets\Scripts\ScreenFade.cs" />
      <Compile Include="Assets\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
      <Compile Include="Assets\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
      <Compile Include="Assets\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />

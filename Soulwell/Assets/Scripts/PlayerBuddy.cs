@@ -19,9 +19,15 @@ public class PlayerBuddy : MonoBehaviour
 
 	private bool freedom = true;
 
+	public AudioClip bird;
+
+	private AudioSource source;
+
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
+		source = GetComponent<AudioSource>();
+		source.clip = bird;
 		transform.position = target.transform.position - new Vector3 (2, 2, 0);
 	}
 	
@@ -62,8 +68,10 @@ public class PlayerBuddy : MonoBehaviour
 		{
 			//and disappear
 			gameObject.renderer.enabled = false;
+			source.Play();
 			//if you need to reuse this guy later, then I would suggest //ing out the following line.
 			//gameObject.SetActive = false;
 		}
+
 	}
 }
