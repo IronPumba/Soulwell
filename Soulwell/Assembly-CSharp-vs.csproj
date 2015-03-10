@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EndGameState.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\BlurEffect.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\ContrastStretchEffect.cs" />
