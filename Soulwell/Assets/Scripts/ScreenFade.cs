@@ -6,7 +6,7 @@ public class ScreenFade : MonoBehaviour {
 	public string nextLevel;
 	public float fadeSpeed = 0.1f;          // Speed that the screen fades to and from black.
 
-	private bool sceneStarting = true, endingScene = false;      // Whether or not the scene is still fading in.
+	private bool sceneStarting = true, endingScene = false;       // Whether or not the scene is still fading in.
 	
 	
 	void Awake ()
@@ -62,7 +62,7 @@ public class ScreenFade : MonoBehaviour {
 		{
 			// ... set the colour to clear and disable the GUITexture.
 			guiTexture.color = Color.clear;
-			guiTexture.enabled = false;
+			//guiTexture.enabled = false;
 			
 			// The scene is no longer starting.
 			sceneStarting = false;
