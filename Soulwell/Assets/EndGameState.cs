@@ -5,9 +5,17 @@ public class EndGameState : MonoBehaviour {
 
 
 	void Update () {
-	
+	/*
+		if(Input.GetKeyDown(KeyCode.F9)){
+			Debug.Log("cunt");
+
+			GameObject.Find("Fader").GetComponent<ScreenFade>().FadeToBlack();
+
+		}
+*/
+
 		if (GameObject.FindWithTag("PondCube") == null) {
-			Application.LoadLevel("End Scene");
+			GameObject.Find("Fader").GetComponent<ScreenFade>().FadeToBlack();
 		}
 
 	}

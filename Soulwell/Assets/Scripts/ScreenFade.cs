@@ -2,15 +2,17 @@
 using System.Collections;
 
 public class ScreenFade : MonoBehaviour {
+	Color test;
+	public string nextLevel;
+	public float fadeSpeed = 0.1f;          // Speed that the screen fades to and from black.
 
-	public float fadeSpeed = 1.5f;          // Speed that the screen fades to and from black.
-	
-	
-	private bool sceneStarting = true;      // Whether or not the scene is still fading in.
+	private bool sceneStarting = true, endingScene = false;      // Whether or not the scene is still fading in.
 	
 	
 	void Awake ()
 	{
+		test = Color.black;
+
 		// Set the texture so that it is the the size of the screen and covers it.
 		guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
 	}
@@ -18,6 +20,14 @@ public class ScreenFade : MonoBehaviour {
 	
 	void Update ()
 	{
+		if(guiTexture.color == Color.black){
+			Application.LoadLevel(nextLevel);
+		}
+
+		if (endingScene)
+			// ... call the StartScene function.
+			//FadeToBlack();
+			EndScene ();
 		// If the scene is starting...
 		if(sceneStarting)
 			// ... call the StartScene function.
@@ -32,10 +42,13 @@ public class ScreenFade : MonoBehaviour {
 	}
 	
 	
-	void FadeToBlack ()
+	public void FadeToBlack ()
 	{
+		endingScene = true;
 		// Lerp the colour of the texture between itself and black.
-		guiTexture.color = Color.Lerp(guiTexture.color, Color.black, fadeSpeed * Time.deltaTime);
+		guiTexture.color += Color.Lerp (Color.clear, Color.black, fadeSpeed * Time.deltaTime);//guiTexture.color.a, test.a , fadeSpeed * Time.time);
+		Debug.Log ("dont call me cunt");
+
 	}
 	
 	
@@ -55,8 +68,9 @@ public class ScreenFade : MonoBehaviour {
 			sceneStarting = false;
 		}
 	}
+
 	
-	
+
 	public void EndScene ()
 	{
 		// Make sure the texture is enabled.
@@ -68,6 +82,7 @@ public class ScreenFade : MonoBehaviour {
 		// If the screen is almost black...
 		if(guiTexture.color.a >= 0.95f)
 			// ... reload the level.
-			Application.LoadLevel(1);
+			Application.LoadLevel(nextLevel);
 	}
+
 }
